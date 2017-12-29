@@ -1,0 +1,19 @@
+bcp "sql text" queryout "C:\file.ZIP" -T -N -S computername-800813 -d <dbname>
+
+bcp "SQL text "C:\file.ZIP" -T -N -S computername-800813 -d <dbname>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

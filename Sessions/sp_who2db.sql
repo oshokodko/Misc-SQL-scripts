@@ -1,0 +1,2 @@
+CREATE PROC [dbo].[sp_who2db] (@DBName VARCHAR(200)) AS BEGIN DECLARE @who2 TABLE( [SPID] INT, [Status] VARCHAR(200), [Login] VARCHAR(200), [HostName] VARCHAR(200), [BlkBy] VARCHAR(20), [DBName] VARCHAR(200), [Command] VARCHAR(200), [CPUTime] BIGINT, [DiskIO] BIGINT, [LastBatch] VARCHAR(20), [ProgramName] VARCHAR(200), [SPID2] INT, [RequestID] INT ) INSERT @who2 EXEC sp_who2 SELECT * FROM @who2 WHERE DBName = @DBName END 
+
